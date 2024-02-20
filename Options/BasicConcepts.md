@@ -44,6 +44,7 @@ Options Premium:
 ![OptionsPremium.png](images/OptionsPremium.png)
 
 Intrinsic Value = value don't get change. It will be only in "In the Money(ITM) Strike Price"
+
 Extrinsic Value = value gets change based on multiple factors(Time Decay, Implied Volatility). 
 
 Extrinsic Value will be 0 on expiry.
@@ -56,7 +57,9 @@ Calculation:
 Premium = Intrinsic Value + Extrinsic Value
 
 Call Options:
+
    Intrinsic Value : Current Market Price(CMP) - ITM Strike Price
+   
    Extrinsic Value : Premium - Intrinsic Value
    
  
@@ -106,9 +109,64 @@ Eg3:
    
                    = 800 - 0
                    = 800
+                   
+                   
+Put Options:
+   Intrinsic Value : ITM Strike Price - Current Market Price(CMP)
+   Extrinsic Value : Premium - Intrinsic Value
+ 
 
 
+Eg1:  
+   CMP: 36000,
+   Strike Price: 36500 PE,
+   Premium: 800
+   
+     Intrinsic Value = ITM Strike Price - Current Market Price(CMP)
+   
+                   = 36500 - 36000
+                   = 500
+                   
+     Extrinsic Value = Premium - Intrinsic Value
+   
+                   = 800 - 500
+                   = 300
+                    
+Breakeven Calculation:
+
+   Breakeven = Strike Price + Premium Paid (Call option)
+   
+   Breakeven = Strike Price - Premium Paid (Call option)
+   
+   We will get profile only if CMP cross the breakeven.
+   
+
+Options Greeks:
+===============
+
+Delta:
+
+It decides how much premium has to change based on stock price movement.
+Each strike price will have different delta value.
 
 
+    Delta ranges from -1 to 1
+
+    PUT option( -1 to 0)
+    CALL option (0 to 1)
+    
+CALL Delta:
+![Call_Delta.png](images/Call_Delta_1.png)
+
+PUT Delta:
+![Put_Delta.png](images/Put_Delta.png)
+
+Call/Put Premium Calculation:
+Eg 1:
+![Delta_Premium_Calc_1.png](images/Delta_Premium_Calc_1.png)
+
+Eg 2:
+
+![Delta_Premium_Calc_2.png](images/Delta_Premium_Calc_2.png)
 
 
