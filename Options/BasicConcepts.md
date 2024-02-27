@@ -220,14 +220,33 @@ SELL CALL Options:
 ----------------- 
 
 - SELL is exactly opposite to BUY. If we sell call option at strike price
-  of 1000 with premikum 100, then we get profit if market goes below 1000(strike price)
+  of 1000 with premium 100, then we get profit if market goes below 1000(strike price)
   and also we will not loose any money till breakeven which is 1100(1000+100)
   
 - This is credit which mean we receive the premium.
 
 
+PUT options BUY vs SELL
+========================
+
+BUY PUT Options:
+-----------------
+
+- If we buy put option at strike price of 1000 with premium 100, 
+  then we will get profile only if stock goes above 900(1000-100). 
+  This 900 is referred as breakeven price. 
+
+- This is debit which mean we pay the premium.
   
 
+SELL PUT Options:
+----------------- 
+
+- SELL is exactly opposite to BUY. If we sell put option at strike price
+  of 1000 with premium 100, then we get profit if market goes above 1000(strike price)
+  and also we will not loose any money till breakeven which is 900(1000-100)
+  
+- This is credit which mean we receive the premium.
 
 
 
