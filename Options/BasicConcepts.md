@@ -145,6 +145,7 @@ Options Greeks:
 ===============
 
 Delta:
+------
 
 It decides how much premium has to change based on stock price movement.
 Each strike price will have different delta value.
@@ -168,5 +169,68 @@ Eg 1:
 Eg 2:
 
 ![Delta_Premium_Calc_2.png](images/Delta_Premium_Calc_2.png)
+
+Gamma:
+-----
+- Rate of change of delta.
+- If Gamma is high, then either profit/loss will also be high.
+
+Theta:
+------
+- Daily decay of option premium.
+- It's part of Extrinsic value.
+- Get decreased day by day and become 0 on expiry.
+- It is also called as Time Decay.
+
+- Though there is no movement in market, 
+  still premium will decrease because of this theta(time decay)
+
+- OTM & ATM have only extrinsic value. 
+  So, this decay will have high impact in OTM & ATM
+  
+- For deep ITM , extrinsic value will be less. 
+  So, decay impact will also be less.
+
+Implied Volatility(IV):
+-------------------
+- If any panic situation(eg:stock result, news) in market, IV will increase.
+
+- If IV increase, extrinsic value also increase 
+  which in turn increase the option premium.
+  
+- Though no movement in stock price , still will get profile if IV value increase.
+  
+- If we are option buyer, then IV increase will give profile. 
+
+
+CALL options BUY vs SELL
+========================
+
+BUY CALL Options:
+-----------------
+
+- If we buy call option at strike price of 1000 with premium 100, 
+  then we will get profile only if stock goes above 1100(1000+100). 
+  This 1100 is referred as breakeven price. 
+
+- This is debit which mean we pay the premium.
+  
+
+SELL CALL Options:
+----------------- 
+
+- SELL is exactly opposite to BUY. If we sell call option at strike price
+  of 1000 with premikum 100, then we get profit if market goes below 1000(strike price)
+  and also we will not loose any money till breakeven which is 1100(1000+100)
+  
+- This is credit which mean we receive the premium.
+
+
+  
+
+
+
+
+
 
 
