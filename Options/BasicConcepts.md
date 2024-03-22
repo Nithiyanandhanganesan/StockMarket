@@ -174,6 +174,7 @@ Gamma:
 -----
 - Rate of change of delta.
 - If Gamma is high, then either profit/loss will also be high.
+- If near expiry, gamma will be high whereas for long expiry gamma will be low.
 
 Theta:
 ------
@@ -190,17 +191,30 @@ Theta:
   
 - For deep ITM , extrinsic value will be less. 
   So, decay impact will also be less.
+  
+- So, if options expiry is very near, then choose ITM to reduce the loss.
+  Because we can eliminate theta effect in the ITM options.
+  
+- For Long Call & Long Put, 
+     - Always Theta will be negative
+     - Premium Erode -> Loss 
+     
+- For Short Call & Short Put,
+     - AlwaysTheta will be positive
+     - Premium Erode -> Profit  
 
 Implied Volatility(IV):
 -------------------
 - If any panic situation(eg:stock result, news) in market, IV will increase.
+- Eg: After market result, again IV will decrease.
+- IV percentile value range from 0 - 100
 
 - If IV increase, extrinsic value also increase 
   which in turn increase the option premium.
   
 - Though no movement in stock price , still will get profile if IV value increase.
   
-- If we are option buyer, then IV increase will give profile. 
+- If we are option buyer, then IV increase will give profit. 
 
 
 CALL options BUY vs SELL
@@ -247,6 +261,9 @@ SELL PUT Options:
   and also we will not loose any money till breakeven which is 900(1000-100)
   
 - This is credit which mean we receive the premium.
+
+
+
 
 
 
