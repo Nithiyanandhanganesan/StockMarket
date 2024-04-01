@@ -238,6 +238,7 @@ SELL CALL Options:
   and also we will not loose any money till breakeven which is 1100(1000+100)
   
 - This is credit which mean we receive the premium.
+- Always select long expiry for options selling.
 
 
 PUT options BUY vs SELL
@@ -251,6 +252,7 @@ BUY PUT Options:
   This 900 is referred as breakeven price. 
 
 - This is debit which mean we pay the premium.
+- Always select long expiry for options selling.
   
 
 SELL PUT Options:

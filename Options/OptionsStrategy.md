@@ -73,6 +73,10 @@ How to select IV:
     - we have to BUY the option to get profit.
     - we have to use DEBIT strategy to get profit.
 
+- If IV is going to increase, then long call or long put.
+
+- If IV is going to decrease, then short call or short put.
+
 
 CREDIT STRATEGY:
 ---------------
@@ -92,13 +96,77 @@ DOUBLE LEG OPTIONS STRATEGY:
 
 ![DoubleLegOptionStrategy.png](images/DoubleLegOptionStrategy.png)
 
+SHORT STRADDLE (NON-DIRECTIONAL):
+---------------------------------
+ - SELL ATM CALL & SELL ATM PUT
+ - Loss: Unlimited , Profit: Limited
+ - Choose when market does not move in any of the direction.
+ - Most profitable strategy 
+ - Margin is also high
 
+SHORT STRANGLE (NON-DIRECTIONAL):
+---------------------------------
+ - SELL OTM CALL & SELL OTM PUT
+ - Loss: Unlimited, Profit: Limited
+ - Choose when market does not move in any of the direction.
+ - Margin is not that high when compared to short straddle
+ - In short strangles are cheaper but require larget price movement 
+   to be profitable compared to straddles.
+
+LONG STRADDLE (BI-DIRECTIONAL):
+-------------------------------
+  - 
+
+LONG STRANGLE (BI-DIRECTIONAL):
+-------------------------------
+ - BUY LONG CALL AND LONG PUT
+
+DEBIT CALL SPREAD (BULLISH):
+---------------------------
+ - BUY 1 HIGH PREMIUM CALL OPTION AND SELL 1 LOW PREMIUM CALL OPTION
+ - Loss: Limited, Profit: Limited
+ - Choose when market is going to be BULLISH
+ - Here we are trying to limit our loss if market didn't go BULLISH
+   by selling low premium call option.
+
+CREDIT CALL SPREAD (BEARISH):
+-----------------------------
+- SELL 1 HIGH PREMIUM CALL OPTION AND BUY 1 LOW PREMIUM CALL OPTION
+- Loss: Limited, Profit: Limited
+- Choose when market is going to be BEARISH
+- Here we are trying to limit our loss if market didn't go BEARISH
+  by selling high premium call option.
+
+DEBIT PUT SPREAD (BULLISH):
+---------------------------
+- BUY 1 HIGH PREMIUM PUT OPTION AND SELL 1 LOW PREMIUM PUT OPTION
+- Loss: Limited, Profit: Limited
+- Choose when market is going to be BULLISH
+- Here we are trying to limit our loss if market didn't go BULLISH
+  by selling low premium PUT option.
+
+CREDIT PUT SPREAD (BEARISH):
+-----------------------------
+- SELL 1 HIGH PREMIUM PUT OPTION AND BUY 1 PUT PREMIUM PUT OPTION
+- Loss: Limited, Profit: Limited
+- Choose when market is going to be BEARISH
+- Here we are trying to limit our loss if market didn't go BEARISH
+  by selling high premium PUT option.
 
 FOUR LEG OPTIONS STRATEGY:
 ==========================
 
 ![FourLegOptionStrategy.png](images/FourLegOptionStrategy.png)
 
+IRON CONDOR (BI-DIRECTIONAL):
+------------------------------
+  - Combination of DEBIT PUT SPREAD & DEBIT CALL SPREAD.
+  - Profit will come only if there is significant price movement.
+
+INVERTED IRON CONDOR (NON-DIRECTIONAL):
+---------------------------------------
+  - Combination of CREDIT PUT SPREAD & CREDIT CALL SPREAD.
+  - Profit will come only if there is significant price movement.
 
 Spread Type:
 ==============
