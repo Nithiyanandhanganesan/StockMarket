@@ -74,4 +74,69 @@ CONDITION 1:
 **Continuation Sell Zone Formation:**
   ![cont_sell_zone.png](images/cont_sell_zone.png) 
 
+CONDITION 2:
+--------------
+Buy Zone:
+![cond2.png](images/cond2.png) 
+
+Sell Zone:
+![sell_zone_cond2.png](images/sell_zone_cond2.png) 
+
+Example with both condition:
+
+Buy Zone
+![zone_ex1.png](images/zone_ex1.png)
+
+Sell Zone
+![zone_ex2.png](images/zone_ex2.png) 
+
+WHEN TO BUY WHEN ZONE FORMATION HAPPENS?
+
+- Once its satisfies both condition, wait for it come back to previous range.
+- Eg:
+  ![when_to_buy.png](images/when_to_buy.png)
+
+  ![when_to_buy_1.png](images/when_to_buy_1.png)
+
+POWER ZONE FORMATION:
+ - Special Zone
+  ![power_zone_1.png](images/power_zone_1.png)
+  ![power_zone_2.png](images/power_zone_2.png)
+
+ZONE COMPONENTS:
+=================
+  ![zone_comp.png](images/zone_comp.png)
+
+Line Placement:
+---------------
+Method 1(Body-to-Wick):
+
+- Keep the entry line near to which E-candle has higher **BODY**.
+- Keep the Stop-Loss line near to lower wick for the E-Candle.
+- Best for India charts
+![line_place.png](images/line_place.png)
+
+Method 2 (Wick-to-Wick):
+- Keep the entry line near to which E-candle has higher **WICK**.
+- Keep the Stop-Loss line near to lower wick for the E-Candle.
+- Best for International charts
+  ![line_place_1.png](images/line_place_1.png)
+
+TIME FRAME:
+===========
+![timeframe.png](images/timeframe.png)
+
+
+Stock Screener:
+===============
+
+UPTREND:
+--------
+![uptrend.png](images/uptrend.png)
+
+
+
+
+
+
 
