@@ -127,13 +127,37 @@ TIME FRAME:
 ![timeframe.png](images/timeframe.png)
 
 
-Stock Screener:
+Stock Screeners:
 ===============
 
 UPTREND:
 --------
 ![uptrend.png](images/uptrend.png)
 
+DOWNTREND:
+--------
+![downtrend.png](images/downtrend.png)
+
+MA(Moving Average):
+--------------------
+
+HTF zone Confluence:
+--------------------
+
+
+Types of Gaps:
+==============
+ 
+ - Inside Gap  ( Reacts to Close)
+    - If Market open within yesterday's High and Low, then market react to yesterdays close value
+     ![inside_gap.png](images/inside_gap.png)
+ - Outside Gap ( Reacts to High or Low)
+    - Market open beyond or below yesterdays range. Script react to yesterdays high or low.
+      ![outside_gap.png](images/outside_gap.png)
+ - Initiative Gap ( Reversal Pattern)
+      ![intiative_gap.png](images/intiative_gap.png)
+ - Responsive Gap ( Continuous Pattern)
+      ![responsive_gap.png](images/responsive_gap.png)
 
 
 
