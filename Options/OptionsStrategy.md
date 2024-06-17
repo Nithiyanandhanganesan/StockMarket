@@ -103,6 +103,10 @@ SHORT STRADDLE (NON-DIRECTIONAL):
  - Choose when market does not move in any of the direction.
  - Most profitable strategy 
  - Margin is also high
+ - Condition: Outside value CPR (Sideways Days)
+ - Outside value CPR occurrence in market is very rare. Hardly monthly twice.
+ - Also better to avoid when previous day has narrow CPR. Becaz that effect might still be there.
+ - Don't do this strategy on expiry day.
 
 SHORT STRANGLE (NON-DIRECTIONAL):
 ---------------------------------
@@ -110,16 +114,32 @@ SHORT STRANGLE (NON-DIRECTIONAL):
  - Loss: Unlimited, Profit: Limited
  - Choose when market does not move in any of the direction.
  - Margin is not that high when compared to short straddle
- - In short strangles are cheaper but require larget price movement 
+ - In short strangles are cheaper but require large price movement 
    to be profitable compared to straddles.
 
 LONG STRADDLE (BI-DIRECTIONAL):
 -------------------------------
-  - 
+  - BUY ATM CALL & BUY ATM PUT
+  - Risk: Limited , Profit: Unlimited
+  - Condition: Inside Value CPR (Trending Day)
+  - We can take profit only if large movement in market. 
+  - Better to avoid this strategy.
 
 LONG STRANGLE (BI-DIRECTIONAL):
 -------------------------------
  - BUY LONG CALL AND LONG PUT
+
+Spread Type:
+==============
+![spread_type.png](images/spread_type.png)
+
+- In any ratio spread, better to select OTM.
+- Use CREDIT SPREAD,
+     - WHEN IV IS HIGH
+     - VERY NEAR TO EXPIRY
+     - When market is in sideways
+- Use DEBIT SPREAD,
+     - LONG EXPIRY
 
 DEBIT CALL SPREAD (BULLISH):
 ---------------------------
@@ -144,6 +164,7 @@ DEBIT PUT SPREAD (BULLISH):
 - Choose when market is going to be BULLISH
 - Here we are trying to limit our loss if market didn't go BULLISH
   by selling low premium PUT option.
+- ![dp_strategy.png](images/dp_strategy.png)
 
 CREDIT PUT SPREAD (BEARISH):
 -----------------------------
@@ -152,6 +173,15 @@ CREDIT PUT SPREAD (BEARISH):
 - Choose when market is going to be BEARISH
 - Here we are trying to limit our loss if market didn't go BEARISH
   by selling high premium PUT option.
+  ![credit_put_strategy.png](images/credit_put_strategy.png)
+  ![cp_strike_selection.png](images/cp_strike_selection.png)
+     - SELL immediate OTM & Buy (OTM SELL STRIKE - PREMIUM) OTM Strike.
+     - If the GAP between SELL LEG AND BUY LEG IS HIGH, LOSS% IS ALSO HIGH
+- Above strategy works for Positional Trading(long term)
+- Below strategy works for intraday . It works only on the expiry day.
+- Make this transaction after 2:30 PM
+- 3 minutes timeframe is suggested
+  ![cp_intraday.png](images/cp_intraday.png)
 
 FOUR LEG OPTIONS STRATEGY:
 ==========================
@@ -160,14 +190,17 @@ FOUR LEG OPTIONS STRATEGY:
 
 IRON CONDOR (BI-DIRECTIONAL):
 ------------------------------
-  - Combination of DEBIT PUT SPREAD & DEBIT CALL SPREAD.
-  - Profit will come only if there is significant price movement.
+  - Combination of CREDIT PUT SPREAD & CREDIT CALL SPREAD.
+  - Profit will come only if market stays within certain range.
+  - Always better do it on the day of expiry.
 
 INVERTED IRON CONDOR (NON-DIRECTIONAL):
 ---------------------------------------
-  - Combination of CREDIT PUT SPREAD & CREDIT CALL SPREAD.
+  - Combination of DEBIT PUT SPREAD & DEBIT CALL SPREAD.
   - Profit will come only if there is significant price movement.
+  - If Inside value CPR or narrow CPR occurs, then this strategy might work.
+  - Always better do it on the day of expiry.
+  - Do not do it on the quarterly result day, because its debit spread. It will
+    have more IV value. After result IV value will drop suddenly.
+    So, we will not get profit.
 
-Spread Type:
-==============
-![spread_type.png](images/spread_type.png)

@@ -159,6 +159,17 @@ Types of Gaps:
  - Responsive Gap ( Continuous Pattern)
       ![responsive_gap.png](images/responsive_gap.png)
 
+Fibanocci Marking:
+==================
+
+![fib_setup.png](images/fib_setup.png)
+   - Mark the yesterday's high and low. 
+   - On the next day, do trading only in RED OR GREEN ZONE. IGNORE THE WHITE ZONE.
+   - 
+
+
+
+
 
 
 

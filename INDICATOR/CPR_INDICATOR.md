@@ -154,4 +154,15 @@ Using Camarilla How to make trade:
 CHEAT SHEET:
 -----------
 
+POP - Probability of Profit
 ![cheat_sheet.png](images/cheat_sheet.png)
+
+- Below are some example from above cheat sheet:
+  ![ex1.png](images/ex1.png)
+  ![ex2.png](images/ex2.png)
+  ![ex3.png](images/ex3.png)
+  ![ex4.png](images/ex4.png)
+
+- Probability will be high, lets say if we taking H4 breakout on AXIS bank, 
+  winning probability will be high if BANKNIFTY also has NARROW CPR.
+- i.e. Stock and sector index should follow same pattern for high probability of success.
