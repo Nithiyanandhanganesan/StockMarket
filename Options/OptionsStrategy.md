@@ -112,10 +112,12 @@ SHORT STRANGLE (NON-DIRECTIONAL):
 ---------------------------------
  - SELL OTM CALL & SELL OTM PUT
  - Loss: Unlimited, Profit: Limited
+ - Condition: Outside Value CPR
  - Choose when market does not move in any of the direction.
  - Margin is not that high when compared to short straddle
- - In short strangles are cheaper but require large price movement 
-   to be profitable compared to straddles.
+ - Short Straddle is preferrred over short strangle becaz short strangle
+   premium is high, profit is less
+ - 
 
 LONG STRADDLE (BI-DIRECTIONAL):
 -------------------------------
@@ -127,7 +129,10 @@ LONG STRADDLE (BI-DIRECTIONAL):
 
 LONG STRANGLE (BI-DIRECTIONAL):
 -------------------------------
- - BUY LONG CALL AND LONG PUT
+ - BUY OTM CALL AND BUY OTM PUT
+ - Risk: Limited , Reward: Unlimited
+ - Condition: Inside Value CPR (Trending Day)
+ - Better to avoid this strategy becaz profile will only if there is large movement in price.
 
 Spread Type:
 ==============

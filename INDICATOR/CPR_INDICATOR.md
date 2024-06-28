@@ -1,5 +1,5 @@
 
-~~CPR:
+CPR:
 =====
 Central Pivot Range (CPR) indicator is used to identify key points of price levels and trade accordingly.
 
@@ -40,7 +40,8 @@ S3 = S1 - (HIGH - LOW)
 
 EXPANDED FLOOR PIVOTS:
 =======================
-
+- Difference betwen Standard Floor pivot and expanded floor pivots is addition of 
+  new value S4 & R4
 ![expanded_pivot.png](images/expanded_pivot.png)
 
 
@@ -58,10 +59,11 @@ CPR Width Forecasting:
 =======================
 
 - It helps to find which stock going to move next day.
+- CPR does not change based on timeframe. Becaz its yesterday's high/low/close.
 
 ![width_forecast.png](images/width_forecast.png)
 
-
+    
 NARROW CPR(breakout):
 ----------------------
 
@@ -74,6 +76,7 @@ NARROW CPR(breakout):
 - EG: TC-BC = 1.25, latest close = 2900
      so, 0.1% of close = 2.90
      1.25  is less than 2.90, so **IT'S NARROW CPR**
+- Also, don't do reversal pattern on narrow CPR. Always to continuous pattern.
       
 
 ![narrow_cpr.png](images/narrow_cpr.png)
@@ -84,6 +87,7 @@ WIDE CPR(SIDEWAYS):
 
 - IF TC,CP,BC value is very wide, then market will move in sideways.
 - If TC - BC range > 1% of latest close, then we consider it as WIDE CPR
+- Suppose if it breaks the S1 or R1, then Sideways trend might not happen.
   
 ![wide_cpr.png](images/wide_cpr.png)
 
@@ -102,15 +106,18 @@ TWO DAY PIVOT RELATIONSHIP:
 - But occurance of outside CPR is very rare(monthly once).
 ![outside_two_day_pivot.png](images/outside_two_day_pivot.png)
 
+- Overlapping Higher Value will be sideways towards uptrend.
 ![overlap_two_day_pivot.png](images/overlap_two_day_pivot.png)
 
+- Overlapping Lower Value will be sideways towards downtrend.
 ![overlap_low_two_day_pivot.png](images/overlap_low_two_day_pivot.png)
 
 How to use CPR for Trading:
 ===========================
 
 - Using CPR, we cannot make any trade.
-- But with Camerilla + CPR , we can make trade because it has defined entry, target & stop loss.
+- But with Camerilla + CPR , we can make trade because it has 
+  defined entry, target & stop loss.
   ![camerilla_setup.png](images/camerilla_setup.png)
 
 - It will have :
@@ -129,7 +136,7 @@ Extended Camarilla levels:
 
 ![ext_cam_level.png](images/ext_cam_level.png)
 
- - We will no use H1,H2,L1,L2
+ - We will not use H1,H2,L1,L2
  - We will use only H3,H4,H5,L3,L4,L5
  - All Red lines indicate SELL order.
  - All Green lines indicate BUY order.
@@ -143,10 +150,12 @@ Using Camarilla How to make trade:
 - We can make 4 types of trade based on camarilla.
 
 - H3 REVERSAL TRADE:
+- We can make this trade, during sideways trend.
   ![trade_type1.png](images/trade_type1.png)
 - L3 REVERAL TRADE:
   ![trade_type2.png](images/trade_type2.png)
 - H4 BREAKOUT TRADE:
+- Whenever it's trending in single direction, then we can expect breakout.
   ![trade_type3.png](images/trade_type3.png)
 - L4 BREAKOUT TRADE:
   ![trade_type4.png](images/trade_type4.png)
