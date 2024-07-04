@@ -140,6 +140,51 @@ DOWNTREND:
 
 MA(Moving Average):
 --------------------
+- Its just average price of last x days.
+  ![ma_bull.png](images/ma_bull.png)
+- When low period MA cross, high period MA from bottom, then likely its going to be bullish.
+
+MACD (Moving Average Convergence Divergence):
+=============================================
+  - Tradingview indicator: Moving Average Convergence Divergence
+  - Setup Daily timeframe in trading view.
+  - Change Source to "ohlc4" instead of close which is default.
+  - MACD line(blue) shows difference between 12 day EMA and 26 day EMA
+  - Signal line (orange) represent 9 day EMA 
+  - Below histogram shows the difference between MACD line and Signal line.
+  - When histogram bar is high, then there is large price difference.
+  - When Blue line(MACD) cross orange line(Signal) from above, then its bearish.
+  - When Blue line cross orange line from below, then its BULLISH.
+  - We dont need to rely on the line. We can get insight from the histogram.
+  - If histogram mountain is green and high, then there is large diff between
+    MACD line and Signal Line.
+  - If Green Bar is new high, then there is strong momentum. 
+  - Traders will wait for to go down, and buy.
+  - If next Green bar is low than previous, then traders think about selling.
+  - If price bar has higher low and MACD histogram has lower high, 
+    this is called as "Divergence". It tells price is going to go down.
+    ![macd_strategy.png](images/macd_strategy.png)
+  - Check for candlestick pattern as well before making trading.
+  - To find the MACD Divergence line, there is indicator available "MACD Divergences by @DavidTech"
+
+RSI(Relative Strength Index):
+-----------------------------
+- RSI value range from 0 to 100.
+- If RSI value is less than 30, then its considered as oversold.
+- If RSI value is greater than 70, then its considered as overbought.
+- If RSI > 70, its not always true that price will go down. 
+- Tradingview indicator: Relative Strength Index 
+- Tradingview indicator: Divergence Indicator
+- Uncheck RSI-based MA . its not required for trading.
+- How to take trade based on RSI:
+  ![rsi_bullish.png](images/rsi_bullish.png)
+- In above image, RSI prints one low and another higher low and price prints one high low and one low low.
+- In works in Double bottom pattern as well. RSI should print one low 
+  and another higher low.
+
+Breakout Probability:
+---------------------
+- Tradingview indicator: Breakout Probability
 
 HTF zone Confluence:
 --------------------
@@ -165,7 +210,12 @@ Fibanocci Marking:
 ![fib_setup.png](images/fib_setup.png)
    - Mark the yesterday's high and low. 
    - On the next day, do trading only in RED OR GREEN ZONE. IGNORE THE WHITE ZONE.
-   - 
+
+
+Price Vs Volume Trading:
+========================
+![price_volume.png](images/price_volume.png)
+
 
 
 

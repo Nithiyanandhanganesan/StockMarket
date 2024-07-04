@@ -1,0 +1,18 @@
+TrendLine:
+Support & Resistance: Support and Resistance Levels with Breaks [LuxAlgo]
+
+trend channels with liquidity Breaks [ChartPrime]
+
+MACD: Moving average Convergence Divergence
+
+Day Trading Strategy:
+======================
+
+ - Go with 15 mins chart.
+ - Find if stock has Higher High and Lower High
+ - EMA (Exponential Moving Average) change length to 50 and source to ohlc4
+ - Add RSI
+ - Always take trade above moving average line.
+ - Also make sure EMA is line grater than 50 RSI value.
+ - Check for support and resistance level.
+ - Entry will be based on strong bullish candle.
