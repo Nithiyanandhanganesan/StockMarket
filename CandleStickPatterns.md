@@ -5,6 +5,11 @@ Candlestick Pattern Guide Sheet:
 
 ![candle_cheat_sheet.png](images/candle_cheat_sheet.png)
 
+There is TradingView Indicator to find all kind of candlestick patterns.
+  - "All Candlestick Patters"
+  - Adjust the setting as below:
+     - Select only Engulfing , Hammer, Shooting Star.
+
 Bullish Hammer:
 --------------
 

@@ -16,3 +16,30 @@ Day Trading Strategy:
  - Also make sure EMA is line grater than 50 RSI value.
  - Check for support and resistance level.
  - Entry will be based on strong bullish candle.
+
+
+Strategy 1:
+===========
+- Indicator: "All Candlestick Patters"
+- Indicator: "RSI".
+- Indicator: "MACD"
+- Find the bullish candle.
+- Look for RSI divergence. (Price: Higher High, RSI: Lower low)
+- Look for MACD divergency. (Price: Higher High, RSI: Lower low)
+- This confirm that price is going to go high.
+
+Strategy 2:
+===========
+How to trade with Double bottom pattern?
+  - Look for double bottom pattern in chart.
+  - Add RSI , and look for divergence. (Price: Same or Lower low, RSI: Higher high)
+  - Look for any bullish candle.
+
+Strategy 3:
+============
+How to trade Using "Super Trend" Indicator
+  - Green line indicates BUY signal
+  - Red Line indicates SELL signal
+  - Change ATR length to 14
+  - Use this indicator in trending market. Dont use this in when market is in sideways.
+  - Also look for resistance breakout.

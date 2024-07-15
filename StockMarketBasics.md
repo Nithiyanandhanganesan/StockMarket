@@ -178,9 +178,27 @@ RSI(Relative Strength Index):
 - Uncheck RSI-based MA . its not required for trading.
 - How to take trade based on RSI:
   ![rsi_bullish.png](images/rsi_bullish.png)
-- In above image, RSI prints one low and another higher low and price prints one high low and one low low.
+- In above image, RSI prints one low and another higher low and price prints one high low and one lower low.
 - In works in Double bottom pattern as well. RSI should print one low 
   and another higher low.
+- RSI Length adjust to 28 days for better trading.
+
+Bollinger Bands & Fibonacci :
+=============================
+- TradingView Indicator: Bollinger Bands Fibonacci ratios
+- Bollinger Bands consists for Orange Line and Blue line.
+- Orange Line in middle is Simple Moving Average (MA)
+- When price movement is high, then blue upper and lower line will move away from Orange Line.
+- Upper blue line (upper band) is 2 standard deviation above from Middle band (orange line)
+- Lower Blue line (lower band) is 2 standard deviation below from middle band (orange line)
+- How to trade with this indicator?
+   - First look for any candle which is outside of upper band or lower band(Free bar).
+   - 99% of candle stick will be inside the band.
+   - But if we find candle outside of upper band, its overbought, bears will take control.
+   - Also make sure that candle follows bearish candlestick pattern.
+
+
+
 
 Breakout Probability:
 ---------------------
