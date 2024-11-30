@@ -166,7 +166,7 @@ MACD (Moving Average Convergence Divergence):
     ![macd_strategy.png](images/macd_strategy.png)
   - Check for candlestick pattern as well before making trading.
   - To find the MACD Divergence line, there is indicator available "MACD Divergences by @DavidTech"
-
+    which of the following option does not take the collections aggregatekey and throws an error?   a ) val sets = pairs.reduceByKey(new HashSet[Int)(_ + ) b) val sets = pairs.aggregateByKey
 RSI(Relative Strength Index):
 -----------------------------
 - RSI value range from 0 to 100.
