@@ -1,0 +1,46 @@
+//Candle close is above Super Trend ( Super Trend Indicator)
+//Candle close is higher than Upper Bollienger band (Bollinger band )
+//RSI greater than 70  (RSI)
+//Current Candle close should be higher than previous candle.
+
+//@version=5
+strategy("Custom Strategy: Super Trend, Bollinger, RSI", overlay=true)
+
+// Super Trend Parameters
+atrLength = input(14, title="ATR Length")
+factor = input(3.0, title="Super Trend Factor")
+[superTrend, direction] = ta.supertrend(factor, atrLength)
+
+// Bollinger Bands Parameters
+bbLength = input(20, title="Bollinger Bands Length")
+bbStdDev = input(2.0, title="Bollinger Bands StdDev")
+[bbUpper, bbMiddle, bbLower] = ta.bb(close, bbLength, bbStdDev)
+
+// RSI Parameters
+rsiLength = input(14, title="RSI Length")
+rsiValue = ta.rsi(close, rsiLength)
+
+// Define Strategy Conditions
+condition1 = close > superTrend       // Close above Super Trend
+condition2 = close > bbUpper         // Close above Upper Bollinger Band
+condition3 = rsiValue > 70           // RSI greater than 70
+condition4 = close > close[1]        // Current candle close > previous candle close
+
+// Combine All Conditions
+longCondition = condition1 and condition2 and condition3 and condition4
+
+// Plot Super Trend with Color Highlighting
+plot(superTrend, color=direction == 1 ? color.green : color.red, linewidth=2, title="Super Trend")
+
+// Plot Bollinger Bands for Visual Reference
+plot(bbUpper, color=color.blue, title="Upper Bollinger Band")
+plot(bbMiddle, color=color.orange, title="Middle Bollinger Band")
+plot(bbLower, color=color.blue, title="Lower Bollinger Band")
+
+// Plot RSI for Visual Reference (optional, in a separate pane)
+hline(70, "RSI 70", color=color.red)
+plot(rsiValue, title="RSI", color=color.purple)
+
+// Strategy Execution (for backtesting)
+if (longCondition)
+    strategy.entry("Long", strategy.long)

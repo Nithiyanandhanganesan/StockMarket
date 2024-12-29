@@ -43,3 +43,12 @@ How to trade Using "Super Trend" Indicator
   - Change ATR length to 14
   - Use this indicator in trending market. Dont use this in when market is in sideways.
   - Also look for resistance breakout.
+
+Strategy 4:
+===========
+Combine multiple Indicators:
+  - Entry should be make when:
+      -> Candle close is above Super Trend ( Super Trend Indicator)
+      -> Candle close is higher than Upper Bollienger band (Bollinger band )
+      -> RSI greater than 70  (RSI)
+      -> Current Candle close should be higher than previous candle.

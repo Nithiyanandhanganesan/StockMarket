@@ -166,7 +166,7 @@ MACD (Moving Average Convergence Divergence):
     ![macd_strategy.png](images/macd_strategy.png)
   - Check for candlestick pattern as well before making trading.
   - To find the MACD Divergence line, there is indicator available "MACD Divergences by @DavidTech"
-    which of the following option does not take the collections aggregatekey and throws an error?   a ) val sets = pairs.reduceByKey(new HashSet[Int)(_ + ) b) val sets = pairs.aggregateByKey
+
 RSI(Relative Strength Index):
 -----------------------------
 - RSI value range from 0 to 100.
@@ -194,8 +194,16 @@ Bollinger Bands & Fibonacci :
 - How to trade with this indicator?
    - First look for any candle which is outside of upper band or lower band(Free bar).
    - 99% of candle stick will be inside the band.
-   - But if we find candle outside of upper band, its overbought, bears will take control.
-   - Also make sure that candle follows bearish candlestick pattern.
+   - However, it's important to note that:
+      - Overbought Condition: A close above the upper Bollinger Band can also be interpreted as a 
+        sign of an overbought market. The price could be rising too quickly, and a pullback or 
+        consolidation may follow. In this case, the signal may not be sustainable in the long term 
+        and could indicate a potential reversal or correction.
+      - Continuation Signal: If the price remains above the upper Bollinger Band for a sustained 
+        period, it could indicate a strong bullish trend, particularly if accompanied by high volume.
+   - In summary, while a close above the upper Bollinger Band is typically seen as bullish, traders
+     often combine this signal with other indicators (like volume, momentum, or trend strength) to 
+     confirm the likelihood of continuation versus a potential reversal.
 
 
 

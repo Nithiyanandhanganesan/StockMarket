@@ -1,0 +1,64 @@
+//@version=5
+strategy("Custom Strategy: Super Trend, Bollinger, RSI", overlay=true)
+
+// Super Trend Parameters
+atrLength = input(10, title="ATR Length")
+factor = input(3.0, title="Super Trend Factor")
+[superTrend, direction] = ta.supertrend(factor, atrLength)
+
+// Plot Super Trend with Color Highlighting
+plot(superTrend, color=direction == 1 ? color.red : color.green, linewidth=2, title="Super Trend")
+
+
+// Input for Bollinger Bands
+ma_type = input.string("SMA", title="Moving Average Type", options=["SMA", "EMA"])
+source_input = input.string("close", title="Source", options=["close", "open", "hl2", "ohlc4"])  // Choose the source (Close, Open, HL2, OHLC4)
+length = input.int(20, title="Length", minval=1)  // Length for the moving average
+offset = input.int(0, title="Offset", minval=-50, maxval=50)  // Offset for the bands
+mult = input.float(2.0, title="Multiplier")  // Multiplier for the standard deviation
+
+// Map the selected source string to the actual source data
+source = switch source_input
+    "close" => close
+    "open" => open
+    "hl2" => hl2
+    "ohlc4" => ohlc4
+
+// Calculate the moving average based on the selected MA type
+basis = ma_type == "SMA" ? ta.sma(source, length) : ta.ema(source, length)
+
+// Calculate the standard deviation
+dev = mult * ta.stdev(source, length)
+
+// Calculate the upper and lower Bollinger Bands
+upper = basis + dev
+lower = basis - dev
+
+// Plot the Bollinger Bands
+plot(upper, color=color.green, linewidth=2, title="Upper Band")
+plot(lower, color=color.red, linewidth=2, title="Lower Band")
+plot(basis, color=color.blue, linewidth=1, title="Basis")
+
+// Plot fill between the upper and lower bands
+fill(plot(upper), plot(lower), color=color.new(color.blue, 90), title="Bollinger Bands Fill")
+
+
+// RSI Parameters
+rsiLength = input.int(14, title="RSI Length")
+rsiValue = ta.rsi(close, rsiLength)
+
+// Plot RSI for Visual Reference
+hline(70, "RSI 70", color=color.red)  // Overbought level
+hline(30, "RSI 30", color=color.green)  // Oversold level
+plot(rsiValue, title="RSI", color=color.purple)
+
+// Define Strategy Conditions
+condition1 = close > superTrend       // Close above Super Trend
+condition2 = close > upper         // Close above Upper Bollinger Band
+condition3 = rsiValue > 70           // RSI greater than 70
+condition4 = close > close[1]        // Current candle close > previous candle close
+longCondition = condition1 and condition2 and condition3 and condition4
+
+
+if (longCondition)
+    strategy.entry("Long", strategy.long)
